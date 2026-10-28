@@ -144,11 +144,11 @@ app.listen(PORT, async () => {
     console.log(`DHW server running on port ${PORT}`);
     try {
         const doctors = [
-            { name: 'Dr. Harsh Savalia', username: 'harsh',   password: 'pass123'    },
-            { name: 'Dr. Khush',         username: 'khush',   password: 'khush123'   },
-            { name: 'Dr. Naiya',         username: 'naiya',   password: 'naiya123'   },
-            { name: 'Dr. Pratha',        username: 'pratha',  password: 'pratha123'  },
-            { name: 'Dr. Nishtha',       username: 'nishtha', password: 'nishtha123' },
+            { name: 'Dr. Nishtha Ghatiya', username: 'nishtha',   password: 'pass123'    },
+            { name: 'Dr. Khush Patel',         username: 'khush',   password: 'khush123'   },
+            { name: 'Dr. Preet Badera',         username: 'preet',   password: 'preet123'   },
+            { name: 'Dr. Harsh Savalia',        username: 'harsh',  password: 'harsh123'  },
+            { name: 'Dr. Pratha Patel',       username: 'pratha', password: 'pratha123' },
         ];
         for (const doc of doctors) {
             const hash = await bcrypt.hash(doc.password, 10);

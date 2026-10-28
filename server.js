@@ -9,7 +9,7 @@ const app = express();
 const path = require('path');
 const extraOrigins = (process.env.CORS_ORIGINS || '').split(',').map(o => o.trim()).filter(Boolean);
 app.use(cors({
-    origin: ['https://harsh-2111.github.io', 'http://localhost:3000', 'http://127.0.0.1:5500', ...extraOrigins],
+    origin: ['http://localhost:3000', 'http://127.0.0.1:5500', ...extraOrigins],
     methods: ['GET', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

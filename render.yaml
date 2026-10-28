@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: seva-health
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_URL
+        sync: false   # paste your Supabase (or Render Postgres) connection string
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: ""

@@ -20,7 +20,7 @@ Docs: [Technical design & diagrams](docs/ARCHITECTURE.md) · Sample data: [sampl
 | CORS_ORIGINS | Optional extra allowed origins, comma separated |
 | PORT | Server port (default 3000) |
 
-Demo doctors are seeded on startup (e.g. `harsh` / `pass123`).
+Demo doctors are seeded on startup (e.g. `nishtha` / `pass123`).
 
 ## Tests
 With the server running: `BASE_URL=http://localhost:3000 npm test`
